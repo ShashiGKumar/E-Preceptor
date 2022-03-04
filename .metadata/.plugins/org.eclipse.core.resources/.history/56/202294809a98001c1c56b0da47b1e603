@@ -1,0 +1,13 @@
+package com.te.perceptor.service;
+
+import com.te.perceptor.model.StudentAttributes;
+
+public interface StudentService {
+
+	StudentAttributes add(StudentAttributes studentAttributes);
+
+	StudentAttributes update(StudentAttributes studentAttributes, String sname);
+
+	StudentAttributes fetch(StudentAttributes studentAttributes, Integer sid);
+
+}

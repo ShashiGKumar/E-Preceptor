@@ -1,0 +1,22 @@
+package com.te.perceptor.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.te.perceptor.dao.StudentRepository;
+import com.te.perceptor.model.StudentAttributes;
+
+public class StudentServiceImpl implements StudentService{
+	
+	@Autowired
+	StudentRepository studentRepository;
+
+	@Override
+	public StudentAttributes add(StudentAttributes studentAttributes) {
+         if(studentAttributes!=null) {
+        	 StudentAttributes saveStudentDetails = studentRepository.save(studentAttributes);
+        	 return saveStudentDetails;
+         }
+		throw new RuntimeException("Please enter the datails");
+	}
+
+}

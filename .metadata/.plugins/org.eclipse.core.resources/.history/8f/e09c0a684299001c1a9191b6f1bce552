@@ -1,0 +1,7 @@
+package com.te.perceptor.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface StudentCredential extends JpaRepository<StudentCredential, String>{
+
+}

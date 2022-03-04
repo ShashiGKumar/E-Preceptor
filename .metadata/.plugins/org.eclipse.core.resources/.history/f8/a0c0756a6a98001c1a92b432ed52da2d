@@ -1,0 +1,19 @@
+package com.te.perceptor.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.te.perceptor.model.StudentAttributes;
+import com.te.perceptor.service.StudentService;
+
+public class StudentController {
+	
+	@Autowired
+	StudentService studentService;
+	
+	public ResponseEntity<StudentAttributes> adding(@RequestBody StudentAttributes studentAttributes){
+		studentService.add(studentAttributes);
+	}
+
+}

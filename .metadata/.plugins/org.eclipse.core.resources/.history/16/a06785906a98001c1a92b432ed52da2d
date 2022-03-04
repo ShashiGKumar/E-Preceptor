@@ -1,0 +1,14 @@
+package com.te.perceptor.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+public class StudentResponse {
+	
+	private boolean error;
+	private Object data;
+
+}

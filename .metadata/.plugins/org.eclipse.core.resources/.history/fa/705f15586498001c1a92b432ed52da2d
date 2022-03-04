@@ -1,0 +1,17 @@
+package com.te.perceptor.model;
+
+import javax.persistence.Entity;
+
+@Entity
+@data
+public class StudentAttributes {
+	
+	private int sid;
+	private String sname;
+	private long sno;
+	private String saddress;
+	private String semail;
+	private String spassword;
+	
+
+}
